@@ -4,7 +4,7 @@
       <img src="/images/officialseal.png" alt="">
     </a>
     <div class="school-name">
-      <div class="title">莱西姆大学</div>
+      <div class="title">菲律宾莱西姆大学-八大雁校区</div>
       <P>Lyceum of the Philippines University</P>
     </div>
   </div>
@@ -14,11 +14,11 @@
 </header>
 <nav id="t3-mainnav" class="t3-mainnav">
   <ul class="nav-ul">
-    <li class="active nav-li">
-      <a href="">首页</a>
+    <li class="<%= (pathname == '/' ? 'active': '')%> nav-li">
+      <a href="/">首页</a>
     </li>
-    <li class="nav-li">
-      <a href="">学校简介<em class="caret"></em></a>
+    <li class="nav-li <%= (pathname == '/schoolIntroduction' ? 'active': '')%>">
+      <a href="/schoolIntroduction">学校介绍<em class="caret"></em></a>
       <div class="mega-dropdown-menu">
         <div class="mega-inner clearfloat">
           <ul class="col-xs-6">
@@ -52,20 +52,20 @@
         </div>
       </div>
     </li>
-    <li class="nav-li">
-      <a href="">新闻</a>
+    <li class="nav-li <%= (pathname == '/news' ? 'active': '')%>">
+      <a href="/news">新闻动态</a>
     </li>
-    <li class="nav-li">
-      <a href="">专业设置</a>
+    <li class="nav-li <%= (pathname == '/teachingUnit' ? 'active': '')%>">
+      <a href="/teachingUnit">教学单位</a>
     </li>
-    <li class="nav-li">
-      <a href="">申请要求</a>
+    <li class="nav-li <%= (pathname == '/admissionManagement' ? 'active': '')%>">
+      <a href="/admissionManagement">入学办理</a>
     </li>
-    <li class="nav-li">
-      <a href="">国际合作</a>
+    <li class="nav-li <%= (pathname == '/cooperativeColleges' ? 'active': '')%>">
+      <a href="/cooperativeColleges">合作院校</a>
     </li>
-    <li class="nav-li">
-      <a href="">联系我们</a>
+    <li class="nav-li <%= (pathname == '/contactUs' ? 'active': '')%>">
+      <a href="/contactUs">联系我们</a>
     </li>
   </ul>
 </nav>

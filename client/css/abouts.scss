@@ -5,10 +5,17 @@
   background: #dddddd;
   border-bottom: px solid #eeeeee;
 }
+.main-left{
+  width: 75%;
+  height: 500px;
+  float: left;
+}
 .contact-box{
   background: #fff;
   padding:15px;
   width: 25%;
+  box-sizing: border-box;
+  float: left;
 }
 .module-title{
   color: #fff;
@@ -21,4 +28,31 @@
   font-size: 20px;
   font-weight: 500;
   font-family: ZapfHumnst BT,times new roman;
+}
+.sidebarlinks{
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    -webkit-box-shadow: -1px 15px 24px -10px rgba(120,120,120,1);
+    -moz-box-shadow: -1px 15px 24px -10px rgba(120,120,120,1);
+    box-shadow: -1px 15px 24px -10px rgba(120,120,120,1);
+  a{
+    position: relative;
+    border-radius: 0px;
+    color: #333333;
+    border-bottom: 1px solid #DCDCDC;
+    display: block;
+    padding: 8px 15px;
+    font-size: 13px;
+    transition: all 0.2s;
+    &:hover{
+      background-color: #eeeeee;
+      color: #8c0001;
+      transform: scale(1.1);
+    }
+  }
+}
+.main-content{
+  height: 500px;
 }
