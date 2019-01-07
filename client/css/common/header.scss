@@ -173,6 +173,16 @@ body{
   .copyright{
     // width: 50%;
     text-align: center;
+    color: #fff;
+    &.link{
+      a{
+        display: inline-block;
+        margin: 0 5px 10px;
+        &:hover{
+          color: #520707;
+        }
+      }
+    }
     a{
       color: #fff;
     }
